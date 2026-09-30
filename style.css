@@ -1,0 +1,459 @@
+/* =========================================
+   INDIA LEGAL GUIDE
+   Main Website Styles
+   ========================================= */
+
+/* ---------- Global ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* ---------- Container ---------- */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ff6b00;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #374151;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6b00;
+}
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #fff7ed, #ffffff);
+    padding: 80px 20px;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 52px;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #ff6b00;
+}
+
+.hero p {
+    font-size: 19px;
+    color: #6b7280;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* ---------- Search ---------- */
+
+.search-box {
+    max-width: 700px;
+    margin: 30px auto;
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    padding: 7px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.search-box button {
+    border: none;
+    background: #ff6b00;
+    color: white;
+    padding: 0 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #e85d00;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+    display: inline-block;
+    padding: 13px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #ff6b00;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #e85d00;
+}
+
+.btn-secondary {
+    background: #111827;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #374151;
+}
+
+/* ---------- Section ---------- */
+
+.section {
+    padding: 70px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #6b7280;
+}
+
+/* ---------- Cards ---------- */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.card p {
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #ff6b00;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ---------- Emergency Section ---------- */
+
+.emergency-section {
+    background: #fff1f2;
+    padding: 70px 20px;
+}
+
+.emergency-box {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-left: 6px solid #dc2626;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.emergency-box h2 {
+    color: #b91c1c;
+    margin-bottom: 15px;
+}
+
+.emergency-box p {
+    color: #4b5563;
+}
+
+.emergency-button {
+    display: inline-block;
+    margin-top: 20px;
+    background: #dc2626;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ---------- Law Section ---------- */
+
+.law-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 20px;
+}
+
+.law-card h3 {
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.section-number {
+    display: inline-block;
+    background: #fff7ed;
+    color: #c2410c;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.law-card p {
+    color: #4b5563;
+}
+
+.source-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.source-link:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Disclaimer ---------- */
+
+.disclaimer {
+    background: #fefce8;
+    border: 1px solid #fde68a;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.disclaimer h3 {
+    color: #92400e;
+    margin-bottom: 10px;
+}
+
+.disclaimer p {
+    color: #713f12;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background: #111827;
+    color: white;
+    padding: 50px 20px 25px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer p,
+footer a {
+    color: #9ca3af;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid #374151;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    color: #9ca3af;
+}
+
+/* ---------- Mobile Menu ---------- */
+
+.menu-button {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* ---------- Responsive Design ---------- */
+
+@media (max-width: 900px) {
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .navbar {
+        min-height: 60px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .search-box input {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .search-box button {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+}
